@@ -3,6 +3,15 @@ const print = std.debug.print;
 const assert = std.debug.assert;
 
 pub fn main() void {
+    // creating values with no values,
+    // values to be added afterwards
+    var a: i32 = undefined;
+    var b: u32 = undefined;
+
+    a = 10;
+    b = 20;
+    print("value of a: {} & b: {} \n", .{ a, b });
+
     // int32
     const firstInt: i32 = 1;
     print("{} \n", .{firstInt});
